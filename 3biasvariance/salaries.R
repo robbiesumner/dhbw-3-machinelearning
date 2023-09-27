@@ -3,8 +3,8 @@ library(car)
 ?Salaries
 # linear regression on sex to salary
 lm_fit <- lm(
-    formula = salary ~ sex,
-    data = Salaries
+  formula = salary ~ sex,
+  data = Salaries
 )
 
 summary(lm_fit)
@@ -16,8 +16,8 @@ summary(lm_fit)
 names(Salaries)
 
 lm_fit_all <- lm(
-    formula = salary ~ .,
-    data = Salaries
+  formula = salary ~ .,
+  data = Salaries
 )
 
 summary(lm_fit_all)
